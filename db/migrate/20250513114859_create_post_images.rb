@@ -5,6 +5,8 @@ class CreatePostImages < ActiveRecord::Migration[6.1]
       t.string :shop_name
       t.text :caption
       t.integer :user_id
+      t.string :caption
+      t.string :image
       t.timestamps
 
       add_column :users, :age, :integer
